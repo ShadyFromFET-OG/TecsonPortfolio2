@@ -1,0 +1,13 @@
+﻿@inherits LayoutComponentBase
+
+<div class="page">
+    <main>
+        @Body
+    </main>
+</div>
+
+<style>
+    /* This removes the default Blazor sidebar and top bar completely */
+    .page { display: block !important; }
+    main { width: 100%; }
+</style>

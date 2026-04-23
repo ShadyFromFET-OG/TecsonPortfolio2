@@ -1,0 +1,53 @@
+@page "/calculator"
+@inject NavigationManager Nav
+
+<div class="bg-overlay"></div>
+
+<div class="container project-page">
+    <div class="nav-back">
+        <button class="btn-void" @onclick='() => Nav.NavigateTo("/")'>← RETURN_TO_ROOT</button>
+    </div>
+
+    <div class="project-header">
+        <h1 class="glitch" data-text="MODULE: VOID_CALC">MODULE: VOID_CALC</h1>
+        <div class="artifact-id">ID: ARCHIVE_001 // SECTOR: ARITHMETIC_LOGIC</div>
+    </div>
+
+    <div class="blueprint-grid">
+        <div class="side-meta">
+            <div class="meta-block">
+                <span class="label">STATUS</span>
+                <span class="value deploy">● FUNCTIONAL</span>
+            </div>
+            <div class="meta-block">
+                <span class="label">STORAGE</span>
+                <span class="value">XML_LEDGER</span>
+            </div>
+            <div class="meta-block">
+                <span class="label">COMPLETED</span>
+                <span class="value">MARCH_2026</span>
+            </div>
+        </div>
+
+        <div class="main-body">
+            <section class="desc-box">
+                <h3>// LOGIC_OVERVIEW</h3>
+                <p>A specialized arithmetic engine designed for precision. Unlike standard web calculators, this implementation utilizes a PHP backend to process operations and an XML-based history system to maintain a persistent log of all calculations across sessions.</p>
+            </section>
+
+            <section class="tech-manifest">
+                <h3>// ARCHITECTURE_STACK</h3>
+                <div class="tech-pills">
+                    <span>PHP_8.x</span>
+                    <span>XML_DOM</span>
+                    <span>XAMPP_SERVER</span>
+                    <span>CSS_FLEXBOX</span>
+                </div>
+            </section>
+
+            <div class="action-zone">
+                <a href="https://github.com/ShadyFromFET-OG" target="_blank" class="btn-void glow">DECRYPT_SOURCE_CODE</a>
+            </div>
+        </div>
+    </div>
+</div>

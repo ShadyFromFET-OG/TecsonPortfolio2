@@ -1,0 +1,85 @@
+@page "/thriftual"
+@inject NavigationManager Nav
+
+<div class="bg-overlay"></div>
+
+<div class="container project-page">
+    <div class="nav-back">
+        <button class="btn-void" @onclick='() => Nav.NavigateTo("/")'>← RETURN_TO_ROOT</button>
+    </div>
+
+    <div class="project-header">
+        <h1 class="glitch" data-text="PROJECT: THRIFTUAL">PROJECT: THRIFTUAL</h1>
+        <div class="artifact-id">ID: ARCHIVE_002 // SECTOR: E-COMMERCE</div>
+    </div>
+
+    <div class="blueprint-grid">
+        <div class="side-meta">
+            <div class="meta-block">
+                <span class="label">STATUS</span>
+                <span class="value deploy">● DEPLOYED_STABLE</span>
+            </div>
+            <div class="meta-block">
+                <span class="label">ROLE</span>
+                <span class="value">FULL_STACK_ARCHITECT</span>
+            </div>
+            <div class="meta-block">
+                <span class="label">YEAR</span>
+                <span class="value">2026</span>
+            </div>
+        </div>
+
+        <div class="main-body">
+            <section class="desc-box">
+                <h3>// EXECUTIVE_SUMMARY</h3>
+                <p>An underground-themed marketplace engineered for high-contrast aesthetics and secure transactions. Integrated role-based authentication and a dynamic inventory system using a custom PHP engine.</p>
+            </section>
+
+            <section class="tech-manifest">
+                <h3>// TECH_MANIFEST</h3>
+                <div class="tech-pills">
+                    <span>PHP_CORE</span>
+                    <span>MYSQL_DB</span>
+                    <span>XAMPP_ENV</span>
+                    <span>VANILLA_JS</span>
+                    <span>CSS_ARCANE</span>
+                </div>
+            </section>
+
+            <div class="action-zone">
+                <a href="https://github.com/ShadyFromFET-OG" target="_blank" class="btn-void glow">ACCESS_SOURCE_CODE</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .project-page { padding: 60px 20px; animation: fadeIn 1s ease; }
+    .artifact-id { font-size: 10px; color: #444; letter-spacing: 3px; margin-top: 5px; }
+    
+    .blueprint-grid { 
+        display: grid; 
+        grid-template-columns: 200px 1fr; 
+        gap: 40px; 
+        margin-top: 50px; 
+        border-top: 1px solid #222;
+        padding-top: 40px;
+    }
+
+    .side-meta { border-right: 1px solid #111; padding-right: 20px; }
+    .meta-block { margin-bottom: 25px; }
+    .meta-block .label { display: block; font-size: 9px; color: #333; letter-spacing: 2px; }
+    .meta-block .value { font-size: 12px; color: #aaa; }
+    .value.deploy { color: #0f0; text-shadow: 0 0 5px #0f0; }
+
+    .main-body h3 { font-size: 12px; color: #fff; letter-spacing: 4px; margin-bottom: 15px; border-left: 2px solid #fff; padding-left: 10px; }
+    .desc-box p { color: #888; font-size: 14px; line-height: 1.8; margin-bottom: 40px; }
+
+    .tech-pills span { border: 1px solid #222; padding: 6px 12px; margin: 0 10px 10px 0; display: inline-block; font-size: 10px; color: #666; transition: 0.3s; }
+    .tech-pills span:hover { border-color: #fff; color: #fff; }
+
+    .action-zone { margin-top: 50px; }
+    .btn-void.glow:hover { box-shadow: 0 0 20px rgba(255,255,255,0.2); }
+
+    @@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+</style>

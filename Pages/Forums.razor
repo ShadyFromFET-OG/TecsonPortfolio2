@@ -1,0 +1,53 @@
+@page "/forum"
+@inject NavigationManager Nav
+
+<div class="bg-overlay"></div>
+
+<div class="container project-page">
+    <div class="nav-back">
+        <button class="btn-void" @onclick='() => Nav.NavigateTo("/")'>← DISCONNECT_NODE</button>
+    </div>
+
+    <div class="project-header">
+        <h1 class="glitch" data-text="NODE: TECSON_FORUMS">NODE: TECSON_FORUMS</h1>
+        <div class="artifact-id">ID: ARCHIVE_003 // SECTOR: SOCIAL_NETWORKING</div>
+    </div>
+
+    <div class="blueprint-grid">
+        <div class="side-meta">
+            <div class="meta-block">
+                <span class="label">STATUS</span>
+                <span class="value deploy">● ACTIVE_NODE</span>
+            </div>
+            <div class="meta-block">
+                <span class="label">ENCODING</span>
+                <span class="value">JSON_SERIALIZED</span>
+            </div>
+            <div class="meta-block">
+                <span class="label">UI_TYPE</span>
+                <span class="value">RESPONSIVE_FORUM</span>
+            </div>
+        </div>
+
+        <div class="main-body">
+            <section class="desc-box">
+                <h3>// NETWORK_MANIFESTO</h3>
+                <p>A full-stack communication platform featuring real-time discussion threads. The architecture leverages JSON for lightweight data storage and a robust PHP/JavaScript bridge to handle dynamic content updates without page reloads.</p>
+            </section>
+
+            <section class="tech-manifest">
+                <h3>// PROTOCOL_STACK</h3>
+                <div class="tech-pills">
+                    <span>PHP_ENGINE</span>
+                    <span>JSON_DATA</span>
+                    <span>JAVASCRIPT_ES6</span>
+                    <span>HTML5_SEMANTIC</span>
+                </div>
+            </section>
+
+            <div class="action-zone">
+                <a href="https://github.com/ShadyFromFET-OG" target="_blank" class="btn-void glow">ACCESS_SCHEMATICS</a>
+            </div>
+        </div>
+    </div>
+</div>
